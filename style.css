@@ -1,0 +1,291 @@
+body{
+    background: #000;
+    color: #fff;
+}
+.h{
+    width: 1000px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img5.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.l{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.bl{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+}
+.bl img{
+    width: 12px;
+    margin-left: 10px;
+}
+.b{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    color: white;
+    border: 1px solid #fff;
+}
+.b img{
+    width: 12px;
+    margin-left: 10px;
+}
+.hc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+.hc h1{
+    font-size: 45px;
+    line-height: 70px;
+    font-weight: 600;
+    width: 1000px;
+    margin-top: -100px;
+}
+.hc h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+.hc p{
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-size: 18px;
+    margin-left: 30px;
+}
+.em{
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    width: 500px;
+    margin-left: 270px;
+}
+.em input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    width: 540px;
+}
+.em button{
+    background-color: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+.g{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.hi{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.i{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.immm{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.immm img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.g h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.f{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.f h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.fa{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.fa li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.fa li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.fa .co{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.fa input[type="radio"]:checked + label + .co{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.fa input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.fa .em{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.fa small{
+    font-size: 13px;
+}
+.fo{
+    padding: 50px 15% 10px;
+    border-top: 6px solid #333;
+    color: #777;
+}
+.fo h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.fo .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 10px; 
+}
+.fo .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.fo .rp{
+    align-items: flex-start;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+}
+.ct{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+@media only screen and (max-width: 600px){
+    .l{
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    nav ,bl{
+        padding: 4px 8px;
+    }
+    .hc{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .hc h1{
+        font-size: 30px;
+    }
+    .em button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .i, .immm{
+        flex-basis: 100%;
+    }
+    .g h2{
+        font-size: 30px;
+    }
+    .g p{
+        font-size: 15px;
+    }
+    .r:nth-child(2), .r:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .g .r{
+        padding: 10px 0;
+    }
+    .fa h2{
+        font-size: 20px;
+    }
+    .ac .co{
+        font-size: 14px;
+    }
+    .ac li label{
+        padding: 10px;
+        font-size: 14px;
+    }
+    label::after{
+        font-size: 22px;
+    }
+}
+.f .s{
+    margin-left: 68px;
+    font-size: 17px;
+}
+.f form{
+    margin-bottom: 50px;
+    margin-left:  250px;
+}
